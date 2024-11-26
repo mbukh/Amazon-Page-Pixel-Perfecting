@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/reset.local.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./js/script.js" defer></script>
+    <title>
+        Amazon.com: | WA-02-Amazon
+    </title>
+</head>
+
+<body>
+    <div id="body-container">
+
+        <header>
+            <div id="navbar">
+                <div id="nav-top" class="fl fl-full-c">
+                    <div class="nav-left fl">
+                        <div id="nav-logo" class="fl fl-full-c btn-type">
+                            <div class="sprite-main hamburger"></div>
+                            <a href="#">
+                                <div class="sprite-main amazon-logo-big"></div>
+                            </a>
+                        </div>
+                        <div class="location fl fl-full-c btn-type">
+                            <div class="sprite-main geo"></div>
+                            <div>
+                                <a href="#">
+                                    <div class="line-1 deliver-to">Deliver to</div>
+                                    <div class="line-2">Georgia</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-mid fl-1">
+                        <form id="search-form" action="">
+                            <div class="search-container fl fl-full-c">
+                                <div id="search-cat" class="rel">
+                                    <div class="search-fake-select fl fl-full-c">
+                                        <div>
+                                            <span id="selected-cat-text">All</span>
+                                            <span class="arr-dwn">▾</span>
+                                        </div>
+                                    </div>
+                                    <select id="select-cat" class="op-0 abs" onchange="updateSearchCat()">
+                                        <option>All Departments</option>
+                                        <option>Arts &amp; Crafts</option>
+                                        <option>Automotive</option>
+                                        <option>Baby</option>
+                                        <option>Beauty &amp; Personal Care</option>
+                                        <option>Books</option>
+                                        <option>Boys' Fashion</option>
+                                        <option>Computers</option>
+                                        <option>Deals</option>
+                                        <option>Digital Music</option>
+                                        <option>Electronics</option>
+                                        <option>Girls' Fashion</option>
+                                        <option>Health &amp; Household</option>
+                                        <option>Home &amp; Kitchen</option>
+                                        <option>Industrial &amp; Scientific</option>
+                                        <option>Kindle Store</option>
+                                        <option>Luggage</option>
+                                        <option>Men's Fashion</option>
+                                        <option>Movies &amp; TV</option>
+                                        <option>Music, CDs &amp; Vinyl</option>
+                                        <option>Pet Supplies</option>
+                                        <option>Prime Video</option>
+                                        <option>Software</option>
+                                        <option>Sports &amp; Outdoors</option>
+                                        <option>Tools &amp; Home Improvement</option>
+                                        <option>Toys &amp; Games</option>
+                                        <option>Video Games</option>
+                                        <option>Women's Fashion</option>
+                                    </select>
+                                </div>
+                                <div class="fl-1">
+                                    <input type="text" name="search-bar" id="search-bar" class="search-bar">
+                                </div>
+                                <div>
+                                    <input type="submit" value=" " class="sprite-main search-submit">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="nav-right fl">
+                        <div class="lang btn-type fl fl-col fl-full-c">
+                            <a href="#">
+                                <div class="line-1">&nbsp;</div>
+                                <div class="line-2 fl fl-full-c">
+                                    <span class="sprite-lang-flag lang-usa"></span>
+                                    <span class="nav-accent">EN</span>
+                                    <span class="arr-dwn">▾</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="account btn-type fl fl-col fl-full-c">
+                            <div class=" line-1">Hello, Moshe</div>
+                            <div class="line-2">
+                                Account &amp; Lists
+                                <span class="arr-dwn">▾</span>
+                            </div>
+                        </div>
+                        <div class="returns btn-type fl fl-col fl-full-c">
+                            <div class="line-1">Returns</div>
+                            <div class="line-2">&amp; Orders</div>
+                        </div>
+                        <div class="cart btn-type fl fl-full-c">
+                            <div class="sprite-main cart-icon">
+                                <span class="cart-count">0</span>
+                            </div>
+                            <div class="line-2"><br />Cart</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="nav-bottom" class="fl fl-full-c">
+                    <div class="nav-left">
+                        <ul>
+                            <li class="btn-type">
+                                <a class="fl">
+                                    <div class="sprite-main hamburger"></div>
+                                    <span class="fw700">All</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="nav-mid" class="nav-mid fl-1">
+                        <ul class="fl">
+                            <li class="btn-type">Today's Deals</li>
+                            <li class="btn-type">Customer Service</li>
+                            <li class="btn-type">Registry</li>
+                            <li class="btn-type">Gift Cards</li>
+                            <li class="btn-type">Sell</li>
+                        </ul>
+                    </div>
+                    <div class="nav-right fl-hor-r">
+                        <ul>
+                            <li class="btn-type fw700">Shop deals in Electronics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="banner-top" class="fl fl-full-c"><img src="./img/banner.png" alt=""></div>
+
+        <main>
+            <div id="breadcrumbs">
+                <ul class="fl">
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Computers & Accessories</a></li>
+                    <li><a href="#">Computer Accessories & Peripherals</a></li>
+                    <li><a href="#">Keyboards, Mice & Accessories</a></li>
+                    <li><a href="#">Mice</a></li>
+                </ul>
+            </div>
+
+            <div id="product-page">
+
+                <div id="product-main">
+                    <section>
+                        <div class="three-columns fl rel">
+
+                            <div id="p-mid" class="fl-1 fl-or-2">
+
+                                <div class="title">
+                                    <h1>Gears Out Dill Dough Stress Reliever Putty – Stress Relief Toys for
+                                        Girlfriends
+                                        Funny Pickle Gifts Stocking Stuffers for Adults Stocking Stuffers for Women
+                                        Dill
+                                        Scented Stress Putty Weird</h1>
+                                </div>
+                                <div class="subtitle">
+                                    <div class="store-link">
+                                        <a href="#">Visit the Gears Out Store</a>
+                                    </div>
+                                    <div class="rating fl">
+                                        <div class="sprite-ratings-utils rating-stars-4-5"></div>
+                                        <div class="sprite-utils arr-details-down"></div>
+                                        <div class="rating-count">
+                                            <a href="#">951 ratings</a>
+                                        </div>
+                                    </div>
+                                    <div class="amazon-choice"></div>
+                                    <div class="pledges"></div>
+                                </div>
+
+                                <hr>
+
+                                <div class="info">
+                                    <div class="price">
+                                        <span class="symbol">$</span>
+                                        <span class="whole">15</span>
+                                        <span class="fraction">99</span>
+                                    </div>
+                                    <div class="banner-text">
+                                        <a href="#">
+                                            Get $50 off instantly: Pay $0.00 $15.99 upon approval for
+                                            the Amazon Rewards Visa Card. No annual fee.
+                                        </a>
+                                    </div>
+                                    <div class="overview fl fl-col">
+                                        <div class="fl">
+                                            <div class="t-name fw700">Brand</div>
+                                            <div class="t-value">Gears Out</div>
+                                        </div>
+                                        <div class="fl">
+                                            <div class="t-name fw700">Theme</div>
+                                            <div class="t-value">Pickle</div>
+                                        </div>
+                                        <div class="fl">
+                                            <div class="t-name fw700">Material</div>
+                                            <div class="t-value">Plastic</div>
+                                        </div>
+                                        <div class="fl">
+                                            <div class="t-name fw700">Color</div>
+                                            <div class="t-value">Grey, Green</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <div class="about">
+                                    <div class="desc-div-name">About this item</div>
+                                    <div class="desc-div-content">
+                                        <ul>
+                                            <li>FEELING TENSE, DILL WITH IT – When you’re in a pickle and feeling
+                                                stressed out, reach for your Dill Dough and relieve that tension.
+                                            </li>
+                                            <li>PATENTED STRESS RELIEF PUTTY, WITH LIGHT DILL SCENT – Capture the
+                                                therapeutic bliss of squishable, squeezable stress putty, while
+                                                breathing in the delicious pickle scent that makes Dill-Dough a one of a
+                                                kind, hilarious stress relief toy for one and all.
+                                            </li>
+                                            <li>SWEETS CAN’T RELAX YOU LIKE A GOOD HANDFUL OF DILL-DOUGH – When you’re
+                                                stressed to the max, eating your feelings won’t be half as invigorating
+                                                as a relaxing session with your Dill-Dough! Squish your anxiety away
+                                                with a healthy dose of green, dill-scented stress putty!
+                                            </li>
+                                            <li>FUNNY PICKLE GIFTS FOR THE WIN – Dill Dough Stress Relief Putty is the
+                                                best stocking stuffer for women and adults, because it’s weird, dilly,
+                                                unexpected, and sure to bring a smile to even the most sour face.
+                                                There’s never been a funny pickle gift like this before!
+                                            </li>
+                                            <li>SPECIALLY DESIGNED TO SOOTHE AWAY STRESS: Release tension as you loosen
+                                                the putty by squeezing and kneading it in your hands. Tease it ‘til you
+                                                tame it, and you’ll feel so much better.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="p-left" class="fl-or-1">
+
+                                <div class="mobile-title">
+                                    <div class="title">
+                                        <h1>Gears Out Dill Dough Stress Reliever Putty – Stress Relief Toys for
+                                            Girlfriends
+                                            Funny Pickle Gifts Stocking Stuffers for Adults Stocking Stuffers for Women
+                                            Dill
+                                            Scented Stress Putty Weird</h1>
+                                    </div>
+                                    <div class="subtitle">
+                                        <div class="store-link">
+                                            <a href="#">Visit the Gears Out Store</a>
+                                        </div>
+                                        <div class="rating fl">
+                                            <div class="sprite-ratings-utils rating-stars-4-5"></div>
+                                            <div class="sprite-utils arr-details-down"></div>
+                                            <div class="rating-count">
+                                                <a href="#">951 ratings</a>
+                                            </div>
+                                        </div>
+                                        <div class="amazon-choice"></div>
+                                        <div class="pledges"></div>
+                                    </div>
+                                </div>
+
+                                <div id="image-zoom-overlay"></div>
+
+                                <div class="sticky-image-block fl">
+
+                                    <div id="image-display" class="fl-or-2 rel">
+                                        <div class="social-share"></div>
+
+                                        <div id="prod-img-block" class="fl fl-col">
+                                            <div id="prod-image" class="rel">
+                                                <!-- bug fix ?  class="rel fl fl-full-c" -->
+                                                <img id="main-prod-img" src="./img/product/pr-img1.jpeg" alt="">
+                                                <div id="img-zoom-lens"></div>
+                                            </div>
+                                            <div class="image-display-caption fl fl-full-c">
+                                                Roll over image to zoom in
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div id="image-switch" class="fl-or-1">
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-main-img="./img/product/pr-img1.jpeg">
+                                                    <img src="./img/product/small/pr-img1_s.jpeg">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-main-img="./img/product/pr-img2.jpeg">
+                                                    <img src="./img/product/small/pr-img2_s.jpeg">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-main-img="./img/product/pr-img3.jpeg">
+                                                    <img src="./img/product/small/pr-img3_s.jpeg">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-main-img="./img/product/pr-img4.jpeg">
+                                                    <img src="./img/product/small/pr-img4_s.jpeg">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-main-img="./img/product/pr-img5.jpeg">
+                                                    <img src="./img/product/small/pr-img5_s.jpeg">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-main-img="./img/product/pr-img6.jpeg">
+                                                    <img src="./img/product/small/pr-img6_s.jpeg">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-main-img="./img/product/pr-img7.jpeg">
+                                                    <img src="./img/product/small/pr-img7_s.jpeg">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-main-img="./img/product/pr-img8.jpeg">
+                                                    <img src="./img/product/small/pr-img8_s.jpeg">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-main-img="./img/product/pr-img9.jpeg">
+                                                    <img src="./img/product/small/pr-img9_s.jpeg">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="p-right" class="fl-or-3">
+                                <div class="buy-box">
+                                    <div class="price">
+                                        <span class="symbol">$</span>
+                                        <span class="whole">15</span>
+                                        <span class="fraction">99</span>
+                                    </div>
+                                    <div class="delivery-est">
+                                        $4.16 delivery
+                                        <span class="fw700">January 24 - 26</span>.
+                                        <a href="#">Details</a>
+                                    </div>
+                                    <div class="delivery-dest"><a href="#" class="a-no-hover">Deliver to Georgia</a>
+                                    </div>
+                                    <div class="stock-available">In Stock.</div>
+                                    <div class="quantity">
+                                        <div class="select-add-shadow">
+                                            <div class="order-quantity rel fl fl-full-c">
+                                                <select id="select-quantity" class="op-0 abs"
+                                                    onchange="updateOrderQuantity()">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                    <option>25</option>
+                                                    <option>26</option>
+                                                    <option>27</option>
+                                                    <option>28</option>
+                                                    <option>29</option>
+                                                    <option>30</option>
+                                                </select>
+                                                <span>Qty:</span>
+                                                <span id="selected-quantity-text">1</span>
+                                                <span class="sprite-utils arr-select-down"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="act-purchase">
+                                        <a class="add a-no-hover">Add to Cart</a>
+                                        <a class="buy a-no-hover">Buy Now</a>
+                                    </div>
+                                    <div class="secure-trans">
+                                        <img src="./img/secure.png" alt="">
+                                        <a href="#" class="a-no-hover">Secure transaction</a>
+                                    </div>
+                                    <div class="shipment">
+                                        <div class="fl">
+                                            <div class="t-name fl-1">Ships-from</div>
+                                            <div class="t-value fl-1">GearsOut</div>
+                                        </div>
+                                        <div class="fl">
+                                            <div class="t-name fl-1">Brand</div>
+                                            <div class="t-value fl-1"><a href="#">GearsOut</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="return-policy">
+                                        Return policy:
+                                        <a href="#" class="a-no-hover">
+                                            Eligible for Return, Refund or Replacement within 30 days of receipt
+                                            <div class="sprite-utils arr-details-down"></div>
+                                        </a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="wishlist">
+                                        <a class="wishlist-add a-no-hover">Add to List</a>
+                                    </div>
+                                </div>
+                                <div class="sell-block fl fl-col fl-full-c">
+                                    <div class="question">Have one to sell?</div>
+                                    <div class="add-shadow"><a class="sell-button a-no-hover">Sell on Amazon</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <hr>
+
+                    <section>
+
+                        <div id="carousel-block">
+                            <h2>Popular products based on this item</h2>
+
+                            <div class="carousel">
+                                <ul class="c-gallery js-flickity"
+                                    data-flickity='{ "setGallerySize": false, "initialIndex": 0,  "pageDots": false, "wrapAround": true, "groupCells": true}'>
+
+                                    <li class="c-item">
+                                        <img src="./img/carousel/1.jpg" alt="">
+                                        <div class="title-link">
+                                            <a href="#">
+                                                Kicko Noise Putty Slimes - 12 Gas Sound Slimes - Small Containers 1.5
+                                                Inches
+                                                Assorted Colors - Toy for Kids, Boys, Girls, Party Favors, Gift Bags...
+                                            </a>
+                                        </div>
+                                        <div class="rating fl">
+                                            <div class="sprite-ratings-utils rating-stars-3-5"></div>
+                                            <div class="rating-count"><a href="#">903</a></div>
+                                        </div>
+                                        <div class="price">
+                                            <span class="symbol">$</span>
+                                            <span class="whole">13.99</span>
+                                        </div>
+                                        <div class="info">
+                                            <div>FREE Shipping on orders over</div>
+                                            <div>$25 shipped by Amazon</div>
+                                            <div>Only 11 left in stock - order soon.</div>
+                                        </div>
+                                    </li>
+
+                                    <li class="c-item">
+                                        <img src="./img/carousel/2.jpg" alt="">
+                                        <div class="title-link">
+                                            <a href="#">
+                                                Dill Dough™ Deluxe Glow-in-The-Dark Stress Reliever Putty – Stress
+                                                Relief
+                                                Toys
+                                                for
+                                                Girlfriends Pickle Gifts...
+                                            </a>
+                                        </div>
+                                        <div class="rating fl">
+                                            <div class="sprite-ratings-utils rating-stars-3-5"></div>
+                                            <div class="rating-count"><a href="#">86</a></div>
+                                        </div>
+                                        <div class="price">
+                                            <span class="symbol">$</span>
+                                            <span class="whole">15.85</span>
+                                        </div>
+                                        <div class="info">
+                                            <div>Get it <span class="fw700">Jan 24 - 26</span></div>
+                                            <div>$3.99 shipping</div>
+                                        </div>
+                                    </li>
+
+                                    <li class="c-item">
+                                        <img src="./img/carousel/3.jpg" alt="">
+                                        <div class="title-link">
+                                            <a href="#">
+                                                Massive Package Dill Dough Putty - Christmas Gag Gift Dill Dough Stress
+                                                Putty
+                                                for
+                                                Women - Stress Reliever Toy for Adults - Made Scented...
+                                            </a>
+                                        </div>
+                                        <!-- <div class="rating fl">
+                                            <div class="sprite-ratings-utils rating-stars-3-5"></div>
+                                            <div class="rating-count"><a href="#">86</a></div>
+                                        </div> -->
+                                        <div class="price">
+                                            <span class="symbol">$</span>
+                                            <span class="whole">7.99</span>
+                                        </div>
+                                        <div class="info">
+                                            <div>Get it <span class="fw700">Jan 24 - 26</span></div>
+                                            <div>$4.36 shipping</div>
+                                            <div>Only 9 left in stock - order</div>
+                                        </div>
+                                    </li>
+
+                                    <li class="c-item">
+                                        <img src="./img/carousel/4.jpg" alt="">
+                                        <div class="title-link">
+                                            <a href="#">
+                                                Unicorn Dreams Magical Fidget Putty – Stress Relief Unicorn Gifts Fun
+                                                Gag
+                                                Gifts
+                                                for
+                                                Friends BFF Gifts Stocking Stuffers...
+                                            </a>
+                                        </div>
+                                        <div class="rating fl">
+                                            <div class="sprite-ratings-utils rating-stars-3-5"></div>
+                                            <div class="rating-count"><a href="#">61</a></div>
+                                        </div>
+                                        <div class="price">
+                                            <span class="symbol">$</span>
+                                            <span class="whole">7.95</span>
+                                        </div>
+                                        <div class="info">
+                                            <div>Get it as soon as Tuesday, <span class="fw700">Tuesday, Jan 24</span>
+                                            </div>
+                                            <div>FREE Shipping on orders over $25 shipped by Amazon</div>
+                                        </div>
+                                    </li>
+
+                                    <li class="c-item">
+                                        <img src="./img/carousel/5.jpg" alt="">
+                                        <div class="title-link">
+                                            <a href="#">
+                                                Unicoslm Butter Slime Rainbow Premade Scented Sludge, Stress Relief Toy,
+                                                Birthday,
+                                                School, Education, Cla...
+                                            </a>
+                                        </div>
+                                        <div class="rating fl">
+                                            <div class="sprite-ratings-utils rating-stars-3-5"></div>
+                                            <div class="rating-count"><a href="#">170</a></div>
+                                        </div>
+                                        <div class="price">
+                                            <span class="symbol">$</span>
+                                            <span class="whole">6.98</span>
+                                        </div>
+                                        <div class="info">
+                                            <div>Get it as soon as Tuesday, <span class="fw700">Wednesday, Jan 25</span>
+                                            </div>
+                                            <div>FREE Shipping on orders over $25 shipped by Amazon</div>
+                                        </div>
+                                    </li>
+
+                                    <li class="c-item">
+                                        <img src="./img/carousel/6.jpg" alt="">
+                                        <div class="title-link">
+                                            <a href="#">
+                                                Slime Kit DIY Toy Stocking Stuffer Fidget Gift for Kids Girls Boys Ages
+                                                5-12,
+                                                Dyeing
+                                                Machine Slime Making Kit
+                                            </a>
+                                        </div>
+                                        <div class="rating fl">
+                                            <div class="sprite-ratings-utils rating-stars-3-5"></div>
+                                            <div class="rating-count"><a href="#">170</a></div>
+                                        </div>
+                                        <div class="price">
+                                            <span class="symbol">$</span>
+                                            <span class="whole">45.00</span>
+                                        </div>
+                                        <div class="info">
+                                            <div>Get it Tuesday, <span class="fw700">Feb 6 - 28</span></div>
+                                            <div>$26.00 shipping</div>
+                                        </div>
+                                    </li>
+
+                                    <li class="c-item">
+                                        <img src="./img/carousel/7.jpg" alt="">
+                                        <div class="title-link">
+                                            <a href="#">
+                                                Pillow with Hot Web Dev on it, Personalized Throw ot Catch Pillow Cover
+                                                for Mother Father Kid Adult Friends Lovers Birthday 16"x16"
+                                            </a>
+                                        </div>
+                                        <div class="rating fl">
+                                            <div class="sprite-ratings-utils rating-stars-3-5"></div>
+                                            <div class="rating-count"><a href="#">2043</a></div>
+                                        </div>
+                                        <div class="price">
+                                            <span class="symbol">$</span>
+                                            <span class="whole">105.98</span>
+                                        </div>
+                                        <div class="info">
+                                            <div>$5.98 delivery <span class="fw700">Feb 2 - 27</span></div>
+                                            <div>Or fastest delivery <span class="fw700">Feb 2 - 15</span></div>
+                                            <div>Personalize it</div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </section>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <hr>
+
+    </div>
+
+</body>
+
+</html>
